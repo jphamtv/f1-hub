@@ -1,0 +1,294 @@
+<!-- standings.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 F1 Standings</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="javascript.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="standings.html">Standings</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="drivers.html">Drivers</a></li>
+        <li><a href="teams.html">Teams</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formula One Standings 2023</h1>
+
+    <div>
+      <button type="button">Drivers</button>
+      <button type="button">Constructors</button>
+    </div>
+    
+    <div id="driver-standings">
+      <h2>Driver Standings</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Driver</th>
+          <th>Team</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="flex-container">
+            <div>Max Verstappen</div>
+            <img src="images/nl.svg">
+          </td>
+          <td>Red Bull</td>
+          <td>281</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="flex-container">
+            <div>Sergio Pérez</div>
+            <img src="images/mx.svg">
+          </td>
+          <td>Red Bull</td>
+          <td>171</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="flex-container">
+            <div>Fernando Alonso</div>
+            <img src="images/es.svg">
+          </td>
+          <td>Aston Martin</td>
+          <td>139</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="flex-container">
+            <div>Lewis Hamilton</div>
+            <img src="images/gb.svg">
+          </td>
+          <td>Mercedes</td>
+          <td>133</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="flex-container">
+            <div>George Russell</div>
+            <img src="images/gb.svg">
+          </td>
+          <td>Mercedes</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="flex-container">
+            <div>Carlos Sainz</div>
+            <img src="images/es.svg">
+          </td>
+          <td>Ferrari</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="flex-container">
+            <div>Charles Leclerc</div>
+            <img src="images/mc.svg">
+          </td>
+          <td>Ferrari</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="flex-container">
+            <div>Lando Norris</div>
+            <img src="images/gb.svg">
+          </td>
+          <td>McLaren</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="flex-container">
+            <div>Lance Stroll</div>
+            <img src="images/ca.svg">
+          </td>
+          <td>Aston Martin</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="flex-container">
+            <div>Esteban Ocon</div>
+            <img src="images/fr.svg">
+          </td>
+          <td>Alpine</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="flex-container">
+            <div>Oscar Piastri</div>
+            <img src="images/au.svg">
+          </td>
+          <td>McLaren</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="flex-container">
+            <div>Pierre Gasly</div>
+            <img src="images/fr.svg">
+          </td>
+          <td>Alpine</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td class="flex-container">
+            <div>Alexander Albon</div>
+            <img src="images/th.svg">
+          </td>
+          <td>Williams</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td class="flex-container">
+            <div>Nico Hülkenberg</div>
+            <img src="images/de.svg">
+          </td>
+          <td>Haas</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td class="flex-container">
+            <div>Valtteri Bottas</div>
+            <img src="images/fi.svg">
+          </td>
+          <td>Alfa Romeo</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td class="flex-container">
+            <div>Zhou Guanyu</div>
+            <img src="images/cn.svg">
+          </td>
+          <td>Alfa Romeo</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td class="flex-container">
+            <div>Yuki Tsunoda</div>
+            <img src="images/jp.svg">
+          </td>
+          <td>AlphaTauri</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td class="flex-container">
+            <div>Kevin Magnussen</div>
+            <img src="images/dk.svg">
+          </td>
+          <td>Haas</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td class="flex-container">
+            <div>Logan Sargent</div>
+            <img src="images/us.svg">
+          </td>
+          <td>Williams</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td class="flex-container">
+            <div>Daniel Ricciardo</div>
+            <img src="images/au.svg">
+          </td>
+          <td>AlphaTauri</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="constructor-standings">
+      <h2>Constructor Standings</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Team</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Red Bull Racing - Honda RBPT</td>
+          <td>452</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mercedes</td>
+          <td>223</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Aston Martin - Mercedes</td>
+          <td>184</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ferrari</td>
+          <td>167</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>McLaren - Mercedes</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Alpine - Renault</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Williams - Mercedes</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Haas - Ferrari</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Alfa Romeo - Ferrari</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>AlphaTauri - Honda RBPT</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+  
+</body>
+
+</html>
