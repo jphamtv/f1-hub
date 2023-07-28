@@ -18,7 +18,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="standings.html">Standings</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="schedule.html" id="current">Schedule</a></li>
         <li><a href="drivers.html">Drivers</a></li>
         <li><a href="teams.html">Teams</a></li>
       </ul>
@@ -29,101 +29,108 @@
     <h1>2023 Schedule</h1>
 
     <table>
-      <tr>
-        <th>Date</th>
-        <th>Race</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>Jul 28 - 30</td>
-        <td>
-          <div>Belgian GP</div>
-          <div>Circuit de Spa-Francorchamps</div>
-        </td>
-        <td>Stavelot, Belgium</td>
-      </tr>
-      <tr>
-        <td>Aug 25 - 27</td>
-        <td>
-          <div>Dutch GP</div>
-          <div>Circuit Park Zandvoort</div>
-        </td>
-        <td>Zandvoort, Netherlands</td>
-      </tr>
-      <tr>
-        <td>Sep 1 - 3</td>
-        <td>
-          <div>Italian GP</div>
-          <div>Autodromo Nazionale Monza</div>
-        </td>
-        <td>Monza, Italy</td>
-      </tr>
-      <tr>
-        <td>Sep 15 - 17</td>
-        <td>
-          <div>Singapore GP</div>
-          <div>Marina Bay Street Circuit</div>
-        </td>
-        <td>Singapore, Singapore</td>
-      </tr>
-      <tr>
-        <td>Sep 22 - 24</td>
-        <td>
-          <div>Japanese GP</div>
-          <div>Suzuka International Racing Course</div>
-        </td>
-        <td>Suzuka, Japan</td>
-      </tr>
-      <tr>
-        <td>Oct 6 - 8</td>
-        <td>
-          <div>Quatar GP</div>
-          <div>Losail International Circuit</div>
-        </td>
-        <td>Lusail, Qatar</td>
-      </tr>
-      <tr>
-        <td>Oct 20 -22</td>
-        <td>
-          <div>United States GP</div>
-          <div>Circuit of the Americas</div>
-        </td>
-        <td>Austin, USA</td>
-      </tr>
-      <tr>
-        <td>Oct 27 - 29</td>
-        <td>
-          <div>Mexico City GP</div>
-          <div>Autodromo Hermanos Rodriguez</div>
-        </td>
-        <td>Mexico City, Mexico</td>
-      </tr>
-      <tr>
-        <td>Nov 3 - 5</td>
-        <td>
-          <div>São Paulo GP</div>
-          <div>Autodromo Jose Carlos Pace</div>
-        </td>
-        <td>Sao Paulo, Brazil</td>
-      </tr>
-      <tr>
-        <td>Nov 17 - 19</td>
-        <td>
-          <div>Las Vegas GP</div>
-          <div>Las Vegas Street Circuit</div>
-        </td>
-        <td>Nevada, USA</td>
-      </tr>
-      <tr>
-        <td>Nov 24 - 26</td>
-        <td>
-          <div>Abu Dhabi GP</div>
-          <div>Yas Marina Circuit</div>
-        </td>
-        <td>Abu Dhabi, United Arab Emirates</td>
-      </tr>
+      <thead>
+        <tr>
+          <th class="row-date">Date</th>
+          <th class="row-race">Race</th>
+          <th class="row-location">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jul 28 - 30</td>
+          <td>
+            <div>Belgian GP</div>
+            <div>Circuit de Spa-Francorchamps</div>
+          </td>
+          <td>Stavelot, Belgium</td>
+        </tr>
+        <tr>
+          <td>Aug 25 - 27</td>
+          <td>
+            <div>Dutch GP</div>
+            <div>Circuit Park Zandvoort</div>
+          </td>
+          <td>Zandvoort, Netherlands</td>
+        </tr>
+        <tr>
+          <td>Sep 1 - 3</td>
+          <td>
+            <div>Italian GP</div>
+            <div>Autodromo Nazionale Monza</div>
+          </td>
+          <td>Monza, Italy</td>
+        </tr>
+        <tr>
+          <td>Sep 15 - 17</td>
+          <td>
+            <div>Singapore GP</div>
+            <div>Marina Bay Street Circuit</div>
+          </td>
+          <td>Singapore, Singapore</td>
+        </tr>
+        <tr>
+          <td>Sep 22 - 24</td>
+          <td>
+            <div>Japanese GP</div>
+            <div>Suzuka International Racing Course</div>
+          </td>
+          <td>Suzuka, Japan</td>
+        </tr>
+        <tr>
+          <td>Oct 6 - 8</td>
+          <td>
+            <div>Quatar GP</div>
+            <div>Losail International Circuit</div>
+          </td>
+          <td>Lusail, Qatar</td>
+        </tr>
+        <tr>
+          <td>Oct 20 -22</td>
+          <td>
+            <div>United States GP</div>
+            <div>Circuit of the Americas</div>
+          </td>
+          <td>Austin, USA</td>
+        </tr>
+        <tr>
+          <td>Oct 27 - 29</td>
+          <td>
+            <div>Mexico City GP</div>
+            <div>Autodromo Hermanos Rodriguez</div>
+          </td>
+          <td>Mexico City, Mexico</td>
+        </tr>
+        <tr>
+          <td>Nov 3 - 5</td>
+          <td>
+            <div>São Paulo GP</div>
+            <div>Autodromo Jose Carlos Pace</div>
+          </td>
+          <td>Sao Paulo, Brazil</td>
+        </tr>
+        <tr>
+          <td>Nov 17 - 19</td>
+          <td>
+            <div>Las Vegas GP</div>
+            <div>Las Vegas Street Circuit</div>
+          </td>
+          <td>Nevada, USA</td>
+        </tr>
+        <tr>
+          <td>Nov 24 - 26</td>
+          <td>
+            <div>Abu Dhabi GP</div>
+            <div>Yas Marina Circuit</div>
+          </td>
+          <td>Abu Dhabi, United Arab Emirates</td>
+        </tr>
+      </tbody>
     </table>
   </main>
+  <footer>
+    <div>© 2023 Formula One Hub</div>
+  </footer>
 
 </body>
 

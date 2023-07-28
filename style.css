@@ -15,29 +15,88 @@ html {
   box-sizing: inherit;
 }
 
-header {
-  background-color: crimson;
+body {
+  font-family: 'Titillium Web', sans-serif;
+  min-height: 100vh;
 }
 
-body {
-  height: 100vh;
-  font-family: 'Titillium Web', sans-serif;
+header {
+  background-color: crimson;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: crimson;
+  color: white;
+  font-weight: 300;
+  padding: 20px;
+  margin-top: auto;
 }
 
 main {
- margin: 10px;
+ margin: 40px auto;
+ max-width: 1000px;
+ padding: 20px 20px 50px 20px;
+ border: 1px solid rgb(189, 189, 189);
+ background-color: #ffffff;
+ border-radius: 10px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
 }
 
-nav ul {
+.drivers-container,
+.teams-container {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px 20px 50px 20px;
+  background-color: #ffffff;
+}
+
+ul {
   display: flex;
   list-style-type: none;
   padding: 10px;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+#current {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
 }
 
 a {
   margin-right: 20px;
   color: white;
   text-decoration: none;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  background-image: url("images/hero_img01.jpg");
+  width: 100%;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 40px;
+}
+
+.hero-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 88px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 article {
@@ -53,16 +112,39 @@ button {
   width: 140px;
 }
 
-button:hover,
-button:focus {
+button:hover {
   border: 1px solid crimson;
   background-color: crimson;
   color: white;
   font-weight: bold;
 }
 
+.active {
+  border: 1px solid crimson;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#btn-drivers {
+  border-radius: 20px 0 0 20px;
+}
+
+#btn-constructors {
+  border-radius: 0 20px 20px 0;
+  margin-left: -4px;
+}
+
 h1 {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -71,62 +153,110 @@ h3 {
   text-transform: uppercase;
 }
 
+p {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 750px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
 table, th, td {
-  border-bottom: 1px solid rgb(221, 221, 221);
   border-collapse: collapse;
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 table {
   border-spacing: 30px;
   width: 100%;
   margin-top: 20px;
+  table-layout: fixed;
 }
 
 th {
   text-align: left;
   text-transform: uppercase;
+  border-top: 1px solid rgb(221, 221, 221);
+  background-color: rgb(242, 242, 242);
+  height: 20px;
+  padding: 4px 8px;
 }
 
-th, td {
-  padding: 15px;
+td {
+  padding: 16px 8px;
 }
 
 td div:first-child {
   font-weight: 600;
   text-transform: uppercase;
-  margin-right: 8px;
 }
 
 td img {
   height: 16px;
   width: auto;
   border: 1px solid rgb(239, 239, 239);
+  margin-right: 10px;
+}
+
+.row-position {
+  width: 5%;
+}
+
+.row-name {
+  width: 40%;
+}
+
+.row-team {
+  width: 35%;
+}
+
+.row-points {
+  width: 20%;
+}
+
+.row-date {
+  width: 20%;
+}
+
+.row-race {
+  width: 40%;
+}
+
+.row-location {
+  width: 40%;
 }
 
 .flex-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
 }
 
-.card {
-  border: 2px solid rgb(34, 34, 34);
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.driver-card {
+  border: 1px solid rgb(189, 189, 189);
   background-color: #ffffff;
   border-radius: 10px 40px 10px 10px;
-  min-width: 300px;
+  min-width: 320px;
   height: auto;
-  margin: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .team-card {
-  border: 2px solid rgb(34, 34, 34);
+  border: 1px solid rgb(189, 189, 189);
   background-color: #ffffff;
   border-radius: 10px;
-  min-width: 300px;
+  min-width: 360px;
   height: auto;
-  margin: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
 }
 
 #driver-standings,
@@ -168,11 +298,11 @@ td img {
   color:#262626;
 }
 
-.card footer {
+.driver-card footer {
   padding: 10px 20px;
-  background-color: rgb(34, 34, 34);
-  color: #ffffff;
-  border-top: 2px solid rgb(34, 34, 34);
+  background-color: rgb(230, 230, 230);
+  border-top: 1px solid rgb(189, 189, 189);
+  color: #262626;
   line-height: 1.2;
 }
 
@@ -180,7 +310,7 @@ td img {
   padding: 10px 20px;
   background-color: rgb(255, 255, 255);
   color: #000;
-  border-top: 2px solid rgb(34, 34, 34);
+  border-top: 1px solid rgb(189, 189, 189);
   line-height: 1.2;
 }
 
